@@ -54,7 +54,7 @@ class Tombola:
         if notes:
             self.save_backup(f"Notes:\n{notes}")
 
-    # Frome this the game starts
+    # From this the game starts
     def play(self):
         heading_title_list = [
             "██████    ████     ████ ████   █████      ████     ██      ██████    ██",

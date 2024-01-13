@@ -79,7 +79,7 @@ class Tombola:
         return extracted
     
     def sort_cartelle_by_score(self):
-        self.cartelle.sort(key = lambda x: x.get_score())
+        self.cartelle.sort(key = lambda x: x.get_score(), reverse=True)
     
     def sort_cartelle_by_number(self):
         self.cartelle.sort(key = lambda x: x.number)
@@ -105,8 +105,8 @@ class Tombola:
         self.sort_cartelle_by_number()
         for cart in self.cartelle:
             print(f"{cart}")
-            out_string += f"{cart}"
-        out_string+="\n"
+            out_string += f"\n{cart}"
+        out_string+="\n\n\n"
         self.save_backup(out_string)
         _ = input()
 
@@ -165,7 +165,7 @@ class Cartella:
                     row.remove(n)
 
     def get_score(self):
-        self.score = round(1 - len(self.now_numbers())/15, 2)*100
+        self.score = round((1 - len(self.now_numbers())/15)*100, 2)
         self.score_str = f"{self.score}%"
         return self.score
 

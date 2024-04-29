@@ -1,4 +1,4 @@
-##Play bingo with your friends and family!
+**Play bingo with your friends and family!**
 
 
 ![tombola](https://github.com/matteoprogramming/tombola/assets/148125922/fce09303-cd2b-4a6e-9a45-b99ee298c644)
